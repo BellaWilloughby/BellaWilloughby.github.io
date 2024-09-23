@@ -4,24 +4,25 @@ Ally Senger
 
 find_errors.html 
 
-1. Missing <!DOCTYPE html> at the beginning  
-2. <html language="en"> should be <html lang="en">
-3. <meta charset="UTF-8"> needs to be added 
-4. Missing closing h1 tag (<h1>Welcome to My Error-Filled Page): change to <h1>Welcome to My Error-Filled Page</h1>
-5. Improper closing paragraph <p>: needs an opening <p>This is a paragraph.</p>
-6. Improper nested list closing tag (</li>Item 6</li>): fixed version <li>Item 6</li>
-7. The lsit tag closing is <ul> instead of <ol>: should be <ol>
-8. Unclosed paragraph <p>This is another paragraph.: Needs the closing <p>This is another paragraph.</p>
-9. Invalid closing tag anchor <a href="find_errors_2.html" target="_blank">Click me!</img>: should be <a href="find_errors_2.html" target="_blank">Click me!</a>
-10. Incorrect closing <td>25<td>: needs to be <td>25</td>
-11. Missing table closing tag: should be </table> at the end
-12. Improper at <img>: should be <img src="error.jpeg" alt="Error Image"> (use src)
-13. ../img/error.jpeg
-14. bgcolor is wrong in (<p bgcolor="lightgray">Text</p>): should be <p style="background-color: lightgray;">Text</p>
-15. Unclosed html comment (<!-- This is a comment): shoudl be <!-- This is a comment -->
-16. Unclosed anchor tag (<a href="#">Link ): shoudld be <a href="#">Link</a>
-17. Misnested tags (<p><em>Underlined text</p></em>): shoudl be <p><em>Underlined text</em></p>
-18. Invalid use of <li> in definition list( 
+1. Add images into file
+2. Missing <!DOCTYPE html> at the beginning  
+3. <html language="en"> should be <html lang="en">
+4. <meta charset="UTF-8"> needs to be added 
+5. Missing closing h1 tag (<h1>Welcome to My Error-Filled Page): change to <h1>Welcome to My Error-Filled Page</h1>
+6. Improper closing paragraph <p>: needs an opening <p>This is a paragraph.</p>
+7. Improper nested list closing tag (</li>Item 6</li>): fixed version <li>Item 6</li>
+8. The lsit tag closing is <ul> instead of <ol>: should be <ol>
+9. Unclosed paragraph <p>This is another paragraph.: Needs the closing <p>This is another paragraph.</p>
+10. Invalid closing tag anchor <a href="find_errors_2.html" target="_blank">Click me!</img>: should be <a href="find_errors_2.html" target="_blank">Click me!</a>
+11. Incorrect closing <td>25<td>: needs to be <td>25</td>
+12. Missing table closing tag: should be </table> at the end
+13. Improper at <img>: should be <img src="error.jpeg" alt="Error Image"> (use src)
+14. ../img/error.jpeg
+15. bgcolor is wrong in (<p bgcolor="lightgray">Text</p>): should be <p style="background-color: lightgray;">Text</p>
+16. Unclosed html comment (<!-- This is a comment): shoudl be <!-- This is a comment -->
+17. Unclosed anchor tag (<a href="#">Link ): shoudld be <a href="#">Link</a>
+18. Misnested tags (<p><em>Underlined text</p></em>): shoudl be <p><em>Underlined text</em></p>
+19. Invalid use of <li> in definition list( 
     <dl>
     <li>Descriptive Item Title</li>
     <li>Descriptive Item Text</li>
@@ -29,7 +30,7 @@ find_errors.html
 ) 
 should use: (<dt> and <dd>)
 <dl>
- 19.   <dt>Descriptive Item Title</dt>
+   <dt>Descriptive Item Title</dt>
     <dd>Descriptive Item Text</dd>
 </dl>
 20. Not the same header closing tags (<h2 style="color:Tomato;">Hello World<h3>): shoudld be <h2 style="color:Tomato;">Hello World</h2>
