@@ -1,0 +1,60 @@
+Bella Willoughby 
+Sarah Stonehocker 
+Ally Senger 
+
+find_errors.html 
+
+1. Missing <!DOCTYPE html> at the beginning  
+2. <html language="en"> should be <html lang="en">
+3. <meta charset="UTF-8"> needs to be added 
+4. Missing closing h1 tag (<h1>Welcome to My Error-Filled Page): change to <h1>Welcome to My Error-Filled Page</h1>
+5. Improper closing paragraph <p>: needs an opening <p>This is a paragraph.</p>
+6. Improper nested list closing tag (</li>Item 6</li>): fixed version <li>Item 6</li>
+7. The lsit tag closing is <ul> instead of <ol>: should be <ol>
+8. Unclosed paragraph <p>This is another paragraph.: Needs the closing <p>This is another paragraph.</p>
+9. Invalid closing tag anchor <a href="find_errors_2.html" target="_blank">Click me!</img>: should be <a href="find_errors_2.html" target="_blank">Click me!</a>
+10. Incorrect closing <td>25<td>: needs to be <td>25</td>
+11. Missing table closing tag: should be </table> at the end
+12. Improper at <img>: should be <img src="error.jpeg" alt="Error Image"> (use src)
+13. ../img/error.jpeg
+14. bgcolor is wrong in (<p bgcolor="lightgray">Text</p>): should be <p style="background-color: lightgray;">Text</p>
+15. Unclosed html comment (<!-- This is a comment): shoudl be <!-- This is a comment -->
+16. Unclosed anchor tag (<a href="#">Link ): shoudld be <a href="#">Link</a>
+17. Misnested tags (<p><em>Underlined text</p></em>): shoudl be <p><em>Underlined text</em></p>
+18. Invalid use of <li> in definition list( 
+    <dl>
+    <li>Descriptive Item Title</li>
+    <li>Descriptive Item Text</li>
+</dl>
+) 
+should use: (<dt> and <dd>)
+<dl>
+ 19.   <dt>Descriptive Item Title</dt>
+    <dd>Descriptive Item Text</dd>
+</dl>
+20. Not the same header closing tags (<h2 style="color:Tomato;">Hello World<h3>): shoudld be <h2 style="color:Tomato;">Hello World</h2>
+21. Opening tag for <body> inside <head>: <body> should not be inside of <head>, <head> nly contains meta and title info
+22. Unclosed input element (<input type="button" value="Click me">): should be <input type="button" value="Click me" />
+23. Unclosed <body> tag 
+24. The comment is incorrect format   
+25. invalid clsoing comment <!-- 25 errors on this page-->: opens a new comment but doesnt end the previous one 
+
+
+find_errors_2.html 
+
+1. Missing html tag in the beginning. After <!DOCTYPE html> there should be <html> 
+2. needs <html lang="en"> 
+3. Missing meta charset. should be <meta charset="UTF-8">
+4. Missing closing head tag. Should be <head> 
+5. Improper placement of <h1> inside <head>. <h1> should be inside of the <body>
+6. Missing closing </h1> tag (<h1>Welcome to the second Error Filled Page). Should be <h1>Welcome to the second Error Filled Page</h1>
+7. <body tage needs to be closed. <body>
+8. Misplaced <html> tag. the <html> tag should be at the beginning, not inside of the <body> section.
+9. Unclosed paragraph (<p>This is an <strong>important paragraph.). Should be <p>This is an <strong>important paragraph.</strong></p>
+10. Incorrect attribute for <img> (<img href="image 2.jpg">). Should be src not href. Correct answer: <img src="image 2.jpg">
+11. The heading closing tag (This is a heading</h2>). Should be <h2>This is a heading</h2>
+12. Misplaced text inside paragraph (Text</p>). Should be <p>Text</p>
+13. Invalid comment syntax (<this is a comment>). Should be <!-- This is a comment -->
+14. Mispelled closing </html> tag (</htm>). Should be </html>
+15. Unlcosed <div> tag, its open but not closed. Needs </div>
+ 
