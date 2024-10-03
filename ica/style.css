@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #ccc;
+}
+
+article {
+  width: 210mm;
+  height: 297mm;
+  margin: 20px auto;
+  position: relative;
+}
+
+address {
+  position: absolute;
+  bottom: 8mm;
+  right: 20mm;
+}
+
+h1 {
+  position: absolute;
+  top: 12mm;
+  left: 20mm;
+  width: 128px;
+  height: 128px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+
+  background-image: url("logo.png");
+  background-size: 120px 120px;
+  background-repeat: no-repeat;
+  padding-left: 100px;
+  -webkit-filter: drop-shadow(10px 10px 10px rgba (0,0,0,0,1));
+  filter: drop-shadow(10px 10px 10px rgba(0,0,0,1));
+
+  text-align: center;
+  padding: 44px 0;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+/* Your CSS below here */
+
+article {
+  width: 210mm;
+  height: 297mm;
+  margin: 0 auto;
+  position: relative;
+  background: white;
+  border-top: 1mm solid #ccc;
+  border-bottom: 1mm solid #ccc;
+  background-image: url('top-image.png'), url('bottom-image.png');
+  background-position: top, bottom; /* Ensure the images are placed at the top and bottom */
+  background-repeat: no-repeat;
+  background-size: 100% 50mm, 100% 50mm; /* This ensures both images take up the proper space */
+}
