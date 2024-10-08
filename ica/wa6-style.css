@@ -1,26 +1,20 @@
-#bottomImage { 
-    position: absolute; 
-    left: 0;
-    top: 0;
-    z-index: 0;
-}
-
-#middleImage { 
+#topImage { 
+    width: 210mm;
+    height: 297mm;
     position: absolute;
-    left: 10em;
-    top: 20em;
+    left: 1em;
+    top: 1em;
+    width: 0.1em;
+    height: 0.1em;
     z-index: 1;
 }
 
-#topImage { 
-    position: absolute;
-    left: 30em;
-    top: 30em;
-    z-index: 2;
-}
-
-#insteadOfZIndex0{
-    background-image: url('subway.img'), url('subwayLogo.img');
-    background-position: center center, center top, center bottom;
-    background-repeat: no-repeat;
+#bottomImage { 
+    width: 100%;
+    height: auto;
+    position: absolute; 
+    top: 10px;
+    right: 10px;
+    width: 150px; /* Adjust logo size as needed */
+    z-index: 0; /* Make sure the logo is on top of the background */
 }
