@@ -8,6 +8,16 @@
     height: 0.1em;
     z-index: 1;
 }
+#middleImage { 
+    width: 210mm;
+    height: 297mm;
+    position: absolute;
+    left: 1em;
+    top: 1em;
+    width: 0.1em;
+    height: 0.1em;
+    z-index: 1;   
+}
 
 #bottomImage { 
     width: 100%;
@@ -18,3 +28,4 @@
     width: 150px; /* Adjust logo size as needed */
     z-index: 0; /* Make sure the logo is on top of the background */
 }
+

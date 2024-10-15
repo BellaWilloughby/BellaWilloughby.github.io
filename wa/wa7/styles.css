@@ -1,0 +1,76 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Navigation styles */
+nav ul {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding: 10px;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Content layout */
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+
+/* Article section */
+article {
+  flex: 2;
+  margin-right: 20px;
+}
+
+article img {
+  float: left;
+  margin-right: 15px;
+  width: 200px; /* Adjust as needed */
+  height: auto;
+}
+
+/* Aside section (Photography grid) */
+aside {
+  flex: 1;
+}
+
+.photos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px; /* 1px gap between images */
+  background-image: url('wa/balloon-sq1.jpeg');
+}
+
+.photos img {
+  width: 100%;
+  height: auto;
+  display: block; 
+}
+
+/* Sticky navigation */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
