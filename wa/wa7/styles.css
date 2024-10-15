@@ -59,7 +59,6 @@ aside {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1px; /* 1px gap between images */
-  background-image: url('wa/balloon-sq1.jpeg');
 }
 
 .photos img {
@@ -74,3 +73,5 @@ nav {
   top: 0;
   z-index: 100;
 }
+
+ 
