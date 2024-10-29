@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+.color-box {
+    width: 150px;
+    height: 150px;
+    background-color: lightblue;
+    display: inline-block;
+    line-height: 150px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.text {
+    font-size: 20px;
+    color: black;
+    margin-top: 20px;
+    transition: color 0.3s;
+}
