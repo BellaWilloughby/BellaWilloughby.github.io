@@ -1,19 +1,43 @@
-// Event listener for the box click
-const box = document.getElementById("box");
-box.addEventListener("click", function() {
-    // Toggle the background color between light blue and light green
-    box.style.backgroundColor = box.style.backgroundColor === "lightblue" ? "lightgreen" : "lightblue";
-    box.textContent = box.style.backgroundColor === "lightblue" ? "Click me!" : "Clicked!";
-});
+const customName = document.getElementById('customname');
+const randomize = document.querySelector('.randomize');
+const story = document.querySelector('.story');
 
-// Event listeners for text hover
-const text = document.getElementById("text");
-text.addEventListener("mouseover", function() {
-    text.textContent = "Hi there!";
-    text.style.color = "blue";
-});
+function randomValueFromArray(array) {
+  const random = Math.floor(Math.random() * array.length);
+  return array[random];
+}
 
-text.addEventListener("mouseout", function() {
-    text.textContent = "Hover over me!";
-    text.style.color = "black";
-});
+const storyText = "It was a cold, stormy night, and :insertx: decided to wander around :inserty:. Right as the clock struck midnight, a chilling wind swept through, and suddenly :insertx: :insertz:. Witnesses swore they saw it happen, but nobody could believe their eyes — after all, :insertx: has been gone for decades.";
+
+const insertX = ["Gooby the Goblin", "The Grim Reaper", "Bobby Bones"];
+const insertY = ["the abandoned graveyard", "the haunted forest", "the old mansion"];
+const insertZ = ["let out an eerie cackle", "vanished into thin air", "slowly turned to dust", "glowed with a eerie yellow light"];
+
+randomize.addEventListener('click', result);
+
+function result() {
+  let newStory = storyText;
+
+  const xItem = randomValueFromArray(insertX);
+  const yItem = randomValueFromArray(insertY);
+  const zItem = randomValueFromArray(insertZ);
+
+  newStory = newStory.replace(/:insertx:/g, xItem);
+  newStory = newStory.replace(":inserty:", yItem);
+  newStory = newStory.replace(":insertz:", zItem);
+
+  if (customName.value !== '') {
+    const name = customName.value;
+    newStory = newStory.replace("Bob", name);
+  }
+
+  if (document.getElementById("uk").checked) {
+    const weight = Math.round(300 * 0.0714286) + ' stone';
+    const temperature = Math.round((94 - 32) * 5 / 9) + ' centigrade';
+    newStory = newStory.replace("94 fahrenheit", temperature);
+    newStory = newStory.replace("300 pounds", weight);
+  }
+
+  story.textContent = newStory;
+  story.style.visibility = 'visible';
+}
