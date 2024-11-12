@@ -5,13 +5,13 @@ body {
     background-color: aqua;
 }
 
-/* Heading styles */
+
 h1 {
     text-align: center;
     color: hotpink;
 }
 
-/* Full image section styles */
+
 .full-img {
     position: relative;
     text-align: center;
@@ -23,21 +23,20 @@ h1 {
     height: auto;
     border: 5px solid #ccc;
     border-radius: 8px;
-    transition: filter 0.3s ease; /* Smooth transition for filter changes */
+    transition: filter 0.3s ease; 
 }
 
-/* Overlay styles */
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0); /* Initially transparent */
-    transition: background-color 0.3s ease; /* Smooth transition for overlay */
+    background-color: rgba(0, 0, 0, 0); 
+    transition: background-color 0.3s ease; 
 }
 
-/* Button styles */
+
 .gallery {
     display: flex;            
     flex-direction: column;  
@@ -50,12 +49,12 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     color: white;
-    background-color: hotpink; /* Button background color */
+    background-color: hotpink;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 10px;        /* Space above the button */
-    transition: background-color 0.3s ease; /* Smooth transition for button */
+    margin-top: 10px;        
+    transition: background-color 0.3s ease; 
 }
 
 button:hover {
@@ -63,7 +62,7 @@ button:hover {
 }
 
 
-/* Thumbnail bar styles */
+
 .thumb-bar {
     display: flex;
     justify-content: center;
@@ -72,15 +71,15 @@ button:hover {
 }
 
 .thumb-bar img {
-    width: 100px; /* Set a fixed width for thumbnails */
+    width: 100px; 
     height: auto;
     margin: 0px;
     cursor: pointer;
-    border: 2px solid transparent; /* Add a transparent border */
-    transition: transform 0.2s ease; /* Smooth transition for border */
+    border: 2px solid transparent; 
+    transition: transform 0.2s ease; 
 }
 
 .thumb-bar img:hover {
     transform: scale (1.1);
-    border-color: hotpink; /* Highlight border on hover */
+    border-color: hotpink; 
 }
