@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Image Photo Gallery</title>
+    <link rel="stylesheet" href="../css/wa11.css" />
+    <script src="../js/wa11.js" defer></script>
+  </head>
+<body>
+<h1>An Image Carousel</h1>
+
+<div class="full-img">
+  <img
+    class="displayed-img"
+    src="../img/pic1.jpeg"
+    alt="Awesomeness Sunset"/>
+  <div class="overlay"></div>
+</div>
+
+<div class="button">
+    <button class="dark" id="darken-button">Darken</button>
+</div>
+
+<div class="thumb-bar">
+    <img src="../img/pic1.jpeg" alt="Awesomeness Beach Sunset" onclick="displayImage(this.src)" />
+    <img src="../img/pic2.jpeg" alt="Epic Camping Sunrise" onclick="displayImage(this.src)" />
+    <img src="../img/pic3.jpeg" alt="Me And Mountain Sunset" onclick="displayImage(this.src)" />
+    <img src="../img/pic4.jpeg" alt="Super Lit Cool Sunrise" onclick="displayImage(this.src)" />
+    <img src="../img/pic5.jpeg" alt="Best Sushi Ever" onclick="displayImage(this.src)" />
+</div>
+
+</body>
+</html>
+
+
